@@ -12,6 +12,13 @@
   "devDependencies": {
     "@tarojs/react": "^3.5.7",
     "@tarojs/taro": "^3.5.7",
-    "typescript": "^4.8.4"
+    "typescript": "^4.8.4",
+    "vite": "3.0.7"
+  },
+  "peerDependencies": {
+    "@tarojs/components": ">=3",
+    "@tarojs/react": ">=3",
+    "react": ">=16.13.0",
+    "react-dom": ">=16.13.0"
   }
 }
