@@ -11,6 +11,7 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    "@tarojs/components": "^3.5.7",
     "@tarojs/react": "^3.5.7",
     "@tarojs/taro": "^3.5.7",
     "typescript": "^4.8.4",
