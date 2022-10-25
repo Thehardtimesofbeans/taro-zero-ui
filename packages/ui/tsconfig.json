@@ -1,16 +1,24 @@
 {
     "compilerOptions": {
+        "target": "esnext", // 目标语言的版本
+        "module": "esnext", // 生成代码的模版标准
+        "moduleResolution": "node", // 采用何种方式解析（也就是查找）TypeScript文件中依赖的模块的位置
+        "strict": true, // 开启所有严格的类型检查
         "declaration": true, /* 生成相关的 '.d.ts' 文件。 */
-        "declarationDir": "../dist/types", /* '.d.ts' 文件输出目录 */
+        "declarationDir": "dist/types", /* '.d.ts' 文件输出目录 */
         "jsx": "preserve",
+        "sourceMap": false,
+        "removeComments": true,
+        "resolveJsonModule": true,
+        "esModuleInterop": true,
+        "skipLibCheck": true,
+        "lib": ["ESNext","DOM"], // TS需要引用的库
     },
     "include": [
         "src/**/*.*",
-        "src/shims-vue.d.ts",
     ],
     "exclude": [
-        "node_modules"
+        "./node_modules"
     ],
-    "esModuleInterop": false,
     "allowSyntheticDefaultImports": true //允许从没有默认导出的模块引入
 }

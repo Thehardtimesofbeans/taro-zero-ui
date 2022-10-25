@@ -14,7 +14,7 @@ export default defineConfig({
     // 添加库模式配置
     build: {
         rollupOptions: {
-            external: externalPackages,
+            external: externalPackages, // 将以上模块保留在bundle之外,不让以上插件打包到组件库中
             output: {
 
             }
